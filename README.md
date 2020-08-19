@@ -3,8 +3,7 @@
 N1植物温湿度传感器二次开发固件，基于ESPHOME，接入HA作为温湿度采集节点
 
 # 引脚说明
-
-![Snipaste_2020-08-19_15-12-1.png](:/6bc85a94c6834fa9b8c3e7f0f84cdc99)
+![引脚图](https://github.com/zouguo-eng/esp12f_plant_tem_and_hum/blob/master/Snipaste_2020-08-19_15-12-10.png)
 
 USB的ID线对应GPIO0
 USB的d+线对应tx
