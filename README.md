@@ -40,6 +40,10 @@ on_message部分用于在设备深度睡眠时唤醒，OTA升级时用
 USB-TTL rx -- ESP设备tx
 USB-TTL tx -- ESP设备rx
 
+![USB-TTL实际接线图](https://github.com/zouguo-eng/esp12f_plant_tem_and_hum/blob/master/Snipaste_2020-08-19_23-49-00.png)
+
+![USB母座针脚图](https://github.com/zouguo-eng/esp12f_plant_tem_and_hum/blob/master/Snipaste_2020-08-19_23-50-34.png)
+
 ### 2.烧写
 
 ![烧写图](https://github.com/zouguo-eng/esp12f_plant_tem_and_hum/blob/master/Snipaste_2020-08-19_15-26-08.png)
