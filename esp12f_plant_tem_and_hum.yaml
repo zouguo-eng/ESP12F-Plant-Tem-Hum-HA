@@ -1,0 +1,55 @@
+esphome:
+  name: esp12f_dht11_test
+  platform: ESP8266
+  board: esp01_1m
+
+wifi:
+  ssid: "xxxx"
+  password: "xxxx"
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Esp12F Dht11 Test"
+    password: "12345678"
+
+captive_portal:
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+# api:
+#   password: "xxxx"
+
+ota:
+  password: "xxxx"
+
+sensor:
+  - platform: dht
+    pin: GPIO4
+    temperature:
+      name: "DHT11 node Temperature"
+    humidity:
+      name: "DHT11 node  Humidity"
+    model: DHT11
+#    update_interval: 10s
+    
+deep_sleep:
+  id: deep_sleep_1
+  run_duration: 10s
+  sleep_duration: 60min
+  
+mqtt:
+  broker: xxxx
+  client_id: xxxx
+  username: xxxx
+  password: xxxx
+  on_message:
+    - topic: ota_mode/wakeup/esp12f
+      payload: 'ON'
+      then:
+        - deep_sleep.prevent: deep_sleep_1
+    - topic: ota_mode/sleep/esp12f
+      payload: 'OFF'
+      then:
+        - deep_sleep.enter: deep_sleep_1
