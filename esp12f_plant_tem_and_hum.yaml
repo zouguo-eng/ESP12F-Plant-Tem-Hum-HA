@@ -18,8 +18,8 @@ captive_portal:
 logger:
 
 # Enable Home Assistant API
-# api:
-#   password: "xxxx"
+api:
+  password: "xxxx"
 
 ota:
   password: "xxxx"
