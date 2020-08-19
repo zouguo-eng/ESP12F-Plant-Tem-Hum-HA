@@ -42,7 +42,7 @@ USB-TTL tx -- ESP设备rx
 
 ### 2.烧写
 
-![Snipaste_2020-08-19_15-26-08.png](:/0857aa04e0384aa0b61e7d6d4c53fd51)
+![烧写图](https://github.com/zouguo-eng/esp12f_plant_tem_and_hum/blob/master/Snipaste_2020-08-19_15-26-08.png)
 
 Serial port选择COM口
 Browse选择固件
