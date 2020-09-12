@@ -3,7 +3,7 @@
 N1植物温湿度传感器二次开发固件，基于ESPHOME，接入HA作为温湿度采集节点
 
 # APP源代码
-配套APP源码[配套APP源码](https://github.com/zouguo-eng/IOTHumTemp)
+[配套APP源码](https://github.com/zouguo-eng/IOTHumTemp)
 
 # 引脚说明
 ![引脚图](https://github.com/zouguo-eng/esp12f_plant_tem_and_hum/blob/master/Snipaste_2020-08-19_15-12-10.png)
